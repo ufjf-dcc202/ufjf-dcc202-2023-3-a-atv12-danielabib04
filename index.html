@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="main.js"></script>
+    <title>DCC202 - Atividade 12: Daniel Abib</title>
+</head>
+<body>
+    <main>  
+        <h1>DCC202 - Atividade 12: Daniel Abib</h1>
+        <section>
+            <form name="entrada">
+                <fieldset>
+                    <legend>Origem</legend>
+                <label>
+                <input type="radio" name="origem" value="joao"/>João</label>
+                <label><input type="radio" name="origem" value="maria"/>Maria</label>
+                <label><input type="radio" name="origem" value="pomar"/>Pomar</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Destino</legend>
+            <label>
+            <input type="radio" name="destino" value="joao"/>João</label>
+            <label><input type="radio" name="destino" value="maria"/>Maria</label>
+            <label><input type="radio" name="destino" value="pomar"/>Pomar</label>
+        </fieldset>
+
+                <label for="ifruta">Fruta:</label>
+                <select id="ifruta" name="fruta">
+                    <option value="maca">Maçã</option>
+                    <option value="pera">Pêra</option>
+                    <option value="banana">Banana</option>
+                    <option value="banana">Uva</option>
+                </select>
+                <label for="iqtd">quantidade</label>
+
+                <input id="iqtd" type="number" name="quantidade" min="0" max="12"/>
+                
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+        <section>
+            <h2>Estoque</h2>
+            <ol id="olJoao" ></ol>
+            <ol id="olMaria"></ol>
+        </section>
+    </main>
+
+</body>
+
+</html>
